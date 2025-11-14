@@ -1,0 +1,19 @@
+sources:
+  - name: betty_boutique_db
+    kind: mysql
+    host: ${MYSQL_HOST}
+    port: ${MYSQL_PORT:-3306}
+    user: ${MYSQL_USER}
+    password: ${MYSQL_PASSWORD}
+    database: betty
+
+tools:
+  - name: get-product-price
+    kind: mysql-sql
+    source: betty_boutique_db
+    description: "Query the product database to find the price of a specific product by name. Use this tool when customers ask about product pricing or availability."
+    sql: "SELECT product_name, price FROM products WHERE product_name LIKE ?"
+    parameters:
+      - name: product_name
+        type: string
+        description: "The name of the product to search for. Can be partial name with wildcards."
