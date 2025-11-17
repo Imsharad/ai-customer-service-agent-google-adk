@@ -1,4 +1,4 @@
-# Betty's Bird Boutique AI Solution
+# AI Customer Service Agent - Google ADK Implementation
 ## Transforming Your Customer Experience with Intelligent AI
 
 *Prepared by: Solution Architect Team*
@@ -6,7 +6,7 @@
 
 ---
 
-## 🎯 Executive Summary
+## Executive Summary
 
 Your new AI Customer Service Agent represents a strategic investment in modern customer engagement technology. This intelligent system transforms your basic website into a powerful customer acquisition and retention tool, designed specifically for your bird specialty retail business.
 
@@ -16,56 +16,86 @@ Your new AI Customer Service Agent represents a strategic investment in modern c
 - **Expert Knowledge at Scale** - Every customer receives expert-level bird care guidance
 - **Competitive Advantage** - Stand out from big-box pet stores with personalized service
 
-## 🏪 Your New AI Assistant: "Betty's Bird Brain"
+## Your New AI Assistant: "Betty's Bird Brain"
 
 Meet your new digital employee - an AI agent that knows your store as well as your best staff member. This intelligent assistant has been trained specifically for Betty's Bird Boutique to provide exceptional customer service while driving foot traffic to your store.
 
 ### What Your AI Agent Does
 
-🛍️ **Product & Pricing Expert**
+**Product & Pricing Expert**
 - Instantly answers price questions for any item in your inventory
 - Provides detailed product information and comparisons
 - Suggests complementary items (bird + cage + food bundles)
 - Always available, never "off shift"
 
-🏢 **Store Ambassador**
+**Store Ambassador**
 - Shares your store's unique history and mission
 - Provides accurate hours, location, and contact information
 - Introduces customers to your knowledgeable staff
 - Highlights what makes Betty's special vs. competitors
 
-🐦 **Bird Care Specialist**
+**Bird Care Specialist**
 - Offers expert advice on bird care, feeding, and behavior
 - Stays current with latest avian health recommendations
 - Helps match customers with the right bird species
 - Builds trust through knowledgeable guidance
 
-🛡️ **Smart Business Protector**
+**Smart Business Protector**
 - Only discusses birds and your store - stays on brand
 - **Never takes orders online** - drives customers to visit in person
 - Maintains professional, helpful tone at all times
 - Protects your business from liability with appropriate disclaimers
 
-## 🧠 How Your AI Works: Three Smart Information Sources
+## Architecture Overview
+
+### System Architecture Diagrams
+
+![Overall System Architecture](docs/diagrams/01-system-architecture.svg)
+
+The AI Customer Service Agent is built on a sophisticated multi-tier architecture that integrates three primary information sources to deliver intelligent, contextual responses to customer inquiries. The overall system architecture shows the complete technology stack from customer interfaces through the Google ADK layer to data sources and infrastructure.
+
+![Data Flow Architecture](docs/diagrams/02-data-flow.svg)
+
+The data flow architecture illustrates how customer requests are processed through the system, from initial input through tool selection and execution to final response generation.
+
+### Component Architecture
+
+![Component Architecture](docs/diagrams/03-component-architecture.svg)
+
+The component architecture provides a detailed view of the internal structure, showing how the agent framework, tools layer, data access components, and storage systems work together to deliver intelligent responses.
+
+### Agent Decision Flow
+
+![Agent Decision Flow](docs/diagrams/04-agent-decision-flow.svg)
+
+The agent decision flow diagram demonstrates the sophisticated logic used to process customer inquiries, including guardrails, intent classification, tool selection, and response synthesis.
+
+### Integration Architecture
+
+![Integration Architecture](docs/diagrams/05-integration-architecture.svg)
+
+The integration architecture shows how the AI agent connects with external systems, third-party services, and your existing business infrastructure through secure API gateways and data integration layers.
+
+## How Your AI Works: Three Smart Information Sources
 
 Your AI agent is powered by three intelligent information systems that work together seamlessly:
 
-### 1. 💰 Your Product Database
+### 1. Your Product Database
 **What it does**: Instantly accesses your complete inventory and pricing
 **Business value**: Customers get immediate, accurate pricing without calling or visiting
 **Example**: *"Customer asks: 'How much is a large parakeet cage?' AI responds instantly with current pricing and suggests accessories."*
 
-### 2. 📋 Your Store Knowledge Base
+### 2. Your Store Knowledge Base
 **What it does**: Remembers everything about your store from uploaded documents
 **Business value**: Consistent, accurate information about your business 24/7
 **Example**: *"Customer asks: 'Are you open on Sundays?' AI provides exact hours and suggests best times to visit for bird selection."*
 
-### 3. 🌐 Current Bird Care Information
+### 3. Current Bird Care Information
 **What it does**: Stays updated with latest bird care research and trends
 **Business value**: Positions you as the expert resource customers trust
 **Example**: *"Customer asks: 'What's the latest on parrot nutrition?' AI shares current best practices and suggests products you carry."*
 
-## 💬 Real Customer Conversations
+## Real Customer Conversations
 
 ### Scenario 1: Price Inquiry
 ```
@@ -130,7 +160,7 @@ avian specialists, and we often have hand-fed babies available. Would you like
 to know about any specific type of bird?"
 ```
 
-## 💼 Business Benefits & ROI
+## Business Benefits & ROI
 
 ### Immediate Benefits (Week 1)
 - **24/7 Availability** - Capture inquiries outside business hours
@@ -150,27 +180,27 @@ to know about any specific type of bird?"
 - **Scalable Growth** - Handle increased customer volume without hiring
 - **Brand Authority** - Known as the "tech-savvy bird experts"
 
-## 🎯 Strategic Implementation Approach
+## Strategic Implementation Approach
 
 ### Phase 1: Foundation (Completed)
-✅ **AI Agent Development** - Custom-trained for your business
-✅ **Product Database Integration** - Connected to your inventory system
-✅ **Store Knowledge Upload** - Your business information digitized
-✅ **Safety Guardrails** - Programmed to protect your business interests
+- **AI Agent Development** - Custom-trained for your business
+- **Product Database Integration** - Connected to your inventory system
+- **Store Knowledge Upload** - Your business information digitized
+- **Safety Guardrails** - Programmed to protect your business interests
 
 ### Phase 2: Launch Preparation (Next Steps)
-🔄 **Staff Training** - How to work alongside AI, handle escalations
-🔄 **Website Integration** - Seamless chat interface on your site
-🔄 **Testing Period** - Supervised conversations to refine responses
-🔄 **Performance Monitoring** - Track customer satisfaction and conversion
+- **Staff Training** - How to work alongside AI, handle escalations
+- **Website Integration** - Seamless chat interface on your site
+- **Testing Period** - Supervised conversations to refine responses
+- **Performance Monitoring** - Track customer satisfaction and conversion
 
 ### Phase 3: Optimization (Ongoing)
-📊 **Analytics Review** - Monthly performance reports and insights
-🔧 **Continuous Improvement** - Refine responses based on real interactions
-📈 **Feature Expansion** - Add new capabilities based on customer needs
-🎯 **ROI Measurement** - Track increased visits and sales attribution
+- **Analytics Review** - Monthly performance reports and insights
+- **Continuous Improvement** - Refine responses based on real interactions
+- **Feature Expansion** - Add new capabilities based on customer needs
+- **ROI Measurement** - Track increased visits and sales attribution
 
-## 🛡️ Risk Management & Quality Assurance
+## Risk Management & Quality Assurance
 
 ### Business Protection Features
 - **Topic Boundaries** - Only discusses birds and your store operations
@@ -185,7 +215,7 @@ to know about any specific type of bird?"
 - **Regular Updates** - Keep bird care information current with latest research
 - **Staff Oversight** - Human team remains in control of customer relationships
 
-## 📊 Performance Metrics & Success Tracking
+## Performance Metrics & Success Tracking
 
 ### Key Performance Indicators (KPIs)
 - **Customer Engagement Rate** - Percentage of website visitors who interact with AI
@@ -208,22 +238,22 @@ Your solution includes a performance dashboard tracking:
 - **Month 6 Target**: 25% reduction in repetitive staff phone calls
 - **Year 1 Target**: Measurable ROI through increased sales attribution
 
-## ⚙️ Technical Architecture (For Your IT Support)
+## Technical Architecture (For Your IT Support)
 
 ### System Overview
 Your AI solution is built on enterprise-grade Google Cloud infrastructure:
 
-**🧠 AI Engine**: Google's Gemini 2.5 Flash
+**AI Engine**: Google's Gemini 2.5 Flash
 - Chosen for speed, accuracy, and cost-effectiveness
 - Specifically optimized for customer service conversations
 - Handles complex multi-turn conversations naturally
 
-**🗄️ Data Sources**:
+**Data Sources**:
 1. **Product Database** - Your existing inventory system
 2. **Store Knowledge Base** - Uploaded PDF documents about your business
 3. **Live Web Information** - Current bird care research and trends
 
-**🔒 Security Features**:
+**Security Features**:
 - Enterprise-level data protection
 - No customer data stored permanently
 - All conversations encrypted
@@ -235,7 +265,7 @@ Your AI solution is built on enterprise-grade Google Cloud infrastructure:
 - **Document Management** - Easy upload system for store information updates
 - **Monitoring Dashboard** - Real-time performance tracking
 
-## 🚀 Next Steps & Implementation Timeline
+## Next Steps & Implementation Timeline
 
 ### Week 1: Final Preparation
 - [ ] Staff training on working with AI assistant
@@ -261,7 +291,7 @@ Your AI solution is built on enterprise-grade Google Cloud infrastructure:
 - [ ] Annual technology updates
 - [ ] Competitive advantage maintenance
 
-## 📞 Support & Maintenance
+## Support & Maintenance
 
 ### Technical Support
 - **24/7 System Monitoring** - Automated alerts for any issues
@@ -275,13 +305,13 @@ Your AI solution is built on enterprise-grade Google Cloud infrastructure:
 - **Competitive Analysis** - Keeping you ahead of other pet stores
 - **Growth Planning** - Scaling the system as your business grows
 
-## 💰 Investment Summary & ROI Expectations
+## Investment Summary & ROI Expectations
 
 ### Implementation Investment
-- ✅ **AI Development** - Completed
-- ✅ **System Integration** - Completed
-- ✅ **Testing & Quality Assurance** - Completed
-- 🔄 **Staff Training & Launch Support** - Included
+- **AI Development** - Completed
+- **System Integration** - Completed
+- **Testing & Quality Assurance** - Completed
+- **Staff Training & Launch Support** - Included
 
 ### Expected Return on Investment
 - **Year 1**: 20-30% increase in new customer acquisition
@@ -297,7 +327,7 @@ Your AI solution is built on enterprise-grade Google Cloud infrastructure:
 
 ---
 
-## 📋 Appendix: Technical Documentation
+## Appendix: Technical Documentation
 
 *The following section contains technical information for your development team and IT support personnel.*
 
@@ -342,7 +372,7 @@ CREATE TABLE products (
 
 ### File Structure
 ```
-starter/
+src/
 ├── agent.py              # Main agent configuration
 ├── agent-prompt.txt      # Agent personality & instructions
 ├── datastore.py          # Vertex AI Search integration
@@ -368,20 +398,20 @@ gcloud run deploy betty-bird-agent \
 
 ---
 
-## 📞 Project Contacts
+## Project Contacts
 
 **Solution Architect**: Development Team Lead
 **Technical Support**: 24/7 monitoring and maintenance
 **Business Liaison**: Customer success and training
 
-**Project Repository**: [https://github.com/Imsharad/betty-bird-boutique](https://github.com/Imsharad/betty-bird-boutique)
+**Project Repository**: [https://github.com/Imsharad/ai-customer-service-agent-google-adk](https://github.com/Imsharad/ai-customer-service-agent-google-adk)
 
 ---
 
-### 🎯 Ready to Transform Your Customer Experience?
+### Ready to Transform Your Customer Experience?
 
 Your AI Customer Service Agent is ready to revolutionize how Betty's Bird Boutique serves customers. This intelligent system represents a strategic investment in modern customer engagement technology, designed specifically to drive foot traffic and build lasting customer relationships.
 
 **Next Step**: Schedule your staff training session to begin your journey toward 24/7 intelligent customer service.
 
-> 🐦 **Betty's Bird Boutique** - *Leading the future of specialty pet retail with AI-powered customer care*
+> **Betty's Bird Boutique** - *Leading the future of specialty pet retail with AI-powered customer care*
