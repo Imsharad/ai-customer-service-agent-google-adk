@@ -1,7 +1,9 @@
 # AI Customer Service Agent - Google ADK Implementation
-## Transforming Your Customer Experience with Intelligent AI
+## Enterprise Multi-Tool Customer Service Automation Platform
 
-*Prepared by: Solution Architect Team*
+**Production-ready customer service agent** built with Google ADK framework featuring multi-tool orchestration: MCP Toolbox integration for Cloud SQL product database queries, Vertex AI Search Datastore for semantic document retrieval from PDF knowledge base, and specialized search agent with Google Search grounding for real-time information access. Implements prompt-based guardrails and InMemorySessionService for conversation context management.
+
+*Prepared by: Solution Architect Team*  
 *For: Betty's Bird Boutique Management*
 
 ---
@@ -9,6 +11,16 @@
 ## Executive Summary
 
 Your new AI Customer Service Agent represents a strategic investment in modern customer engagement technology. This intelligent system transforms your basic website into a powerful customer acquisition and retention tool, designed specifically for your bird specialty retail business.
+
+### Key Technical Highlights
+
+- **Google ADK Framework**: Enterprise-grade agent development kit with Gemini 2.5 Flash model
+- **Multi-Tool Orchestration**: Coordinated access to three specialized information sources
+- **MCP Toolbox Integration**: Seamless Cloud SQL connectivity for product database queries
+- **Vertex AI Search Datastore**: Semantic search over PDF documents with citation support
+- **Google Search Grounding**: Real-time web information retrieval with source attribution
+- **Prompt-Based Guardrails**: Topic boundaries and safety constraints
+- **Session Context Management**: InMemorySessionService for multi-turn conversation continuity
 
 ### Business Impact
 - **24/7 Customer Support** - Never miss a customer inquiry, even after hours
