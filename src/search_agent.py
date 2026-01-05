@@ -12,14 +12,13 @@ with open(instruction_file_path, "r") as f:
   instruction = f.read()
 
 # Create a specialized search agent for general bird knowledge questions
-# Model selection: Using gemini-2.5-flash for web search as it provides
+# Model selection: Using gemini-2.0-flash for web search as it provides
 # excellent grounding capabilities with Google Search while maintaining
-# fast response times. This model is optimized for information retrieval
-# and citation tasks.
+# fast response times. Using Vertex AI backend for higher quotas.
 search_agent = Agent(
     name="bird_knowledge_search",
     instruction=instruction,
-    model="gemini-2.5-flash",
+    model="gemini-2.0-flash",
     tools=[google_search],  # Built-in Google Search tool with grounding
 )
 

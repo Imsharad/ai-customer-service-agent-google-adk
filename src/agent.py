@@ -16,9 +16,9 @@ with open(instruction_file_path, "r") as f:
     instruction = f.read()
 
 # Import tools
-from datastore import get_datastore_search_tool
-from search_agent import get_search_agent_tool
-from toolbox_tools import get_database_tool
+from .datastore import get_datastore_search_tool
+from .search_agent import get_search_agent_tool
+from .toolbox_tools import get_database_tool
 
 # Set up the tools that we will be using for the root agent
 # Filter out None values in case any tool fails to load
@@ -31,12 +31,13 @@ tools = [
 ]
 
 # Create our agent
-# Model selection: Using gemini-2.5-flash for optimal balance of performance,
-# speed, and cost-effectiveness. This model provides excellent reasoning
-# capabilities while maintaining fast response times suitable for customer service.
+# Model selection: Using Vertex AI gemini-2.0-flash for optimal balance of performance,
+# speed, and cost-effectiveness. Using Vertex AI backend for higher quotas.
+# This model provides excellent reasoning capabilities while maintaining fast
+# response times suitable for customer service.
 root_agent = Agent(
     name="betty_bird_brain",
     instruction=instruction,
-    model="gemini-2.5-flash",
+    model="gemini-2.0-flash",
     tools=tools,
 )
